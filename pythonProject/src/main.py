@@ -33,7 +33,7 @@ x = os.getcwd()
 print(x)
 
 # ======================== створити файл
-file = open("src/test.txt", "w+")
+file = open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/test.txt', 'w+')
 file.write('Name|Phone'
            'John;123'
            'Bob;567'
@@ -42,7 +42,7 @@ print(file)
 file.close()
 
 # ======================== прочитати вміст файла
-file = open("src/test.txt", "r")
+file = open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/test.txt', 'r')
 data = file.read()
 print()
 print(type(data))
@@ -54,7 +54,7 @@ file.close()
 
 # ========================
 print()
-file = open("src/test.txt", "r")
+file = open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/test.txt', 'r')
 lines = file.readlines()
 print(type(lines))
 print(lines)
@@ -63,7 +63,7 @@ print(file.closed)
 
 # ========================
 print()
-with open("src/test.txt", mode='r') as file_simple:
+with open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/test.txt', mode='r') as file_simple:
     data_simple = file_simple.read()
     print(data_simple)
 
@@ -748,13 +748,13 @@ print(c.health)
 
 import pickle
 
-with open('src/Pickle.txt', 'w+b') as f:
+with open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/Pickle.txt', 'w+b') as f:
     pickle.dump(c, f)
 
 c = None
 print(c)
 
-with open('src/Pickle.txt', 'rb') as f:
+with open('C:/Users/Frost/PycharmProjects/python_test_git/pythonProject/src/Pickle.txt', 'rb') as f:
     c = pickle.load(f)
 
 print()
@@ -1033,6 +1033,7 @@ from selenium import webdriver
 # ========================
 
 from typing import Final
+
 print()
 print(walrus := True)
 

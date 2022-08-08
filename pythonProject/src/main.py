@@ -5,7 +5,7 @@
 
 import os
 import sys
-
+import unittest
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -1038,3 +1038,7 @@ print()
 print(walrus := True)
 
 PI: Final = float(3.14)
+
+
+if __name__ == '__main__':
+    unittest.main()
